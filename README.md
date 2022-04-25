@@ -32,3 +32,27 @@ root@81d2cea8efe2:/var/www/html#
 ```
 Composer version 2.0.13 2021-04-27 13:11:08
 ```
+
+### Laravelのインストール
+* `/var/www/html`ディレクトリのまま以下のコマンドを実行
+    * `composer create-project --prefer-dist "laravel/laravel=8.*" .`
+* [localhost:80にアクセスする](localhost:80)
+    * ウェルカムページが表示されればOK
+
+### Vue.jsのインストール
+* `/var/www/html`ディレクトリのまま以下のコマンドを実行
+    * `npm -v`
+    * npmバージョンが表示されていたらOK
+* 以下のコマンドを実行
+    * `npm install -D vue`
+    * 以下のような表示になっていればOK
+```
++ vue-template-compiler@2.6.12
+added 3 packages from 2 contributors and audited 4 packages in 1.553s
+found 0 vulnerabilities
+```
+* 念のため`package.json`というファイルの中に以下の記述があるか確認
+```
+"vue": "^2.6.12",
+"vue-template-compiler": "^2.6.12"
+```
