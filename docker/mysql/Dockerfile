@@ -1,7 +1,6 @@
-FROM mysql:8.0
+FROM mysql/mysql-server:8.0
 
-# FROM --platform=linux/x86_64 mysql:8.0
+ENV TZ=Asia/Tokyo
 
-ENV TZ=UTC
-
-COPY ./docker/mysql/my.cnf /etc/my.cnf
+COPY ./my.cnf /etc/my.cnf
+RUN chmod 644 /etc/my.cnf
