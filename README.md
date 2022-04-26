@@ -46,7 +46,7 @@ root@81d2cea8efe2:/var/www/html#
 ```
 * 以下のコマンドを実行してファイルの権限設定を変更
 ```
-chmod -R 777 storage
+chmod -R 777 /var/www/html
 ```
 
 ### Composerのバージョン確認
