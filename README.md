@@ -44,10 +44,6 @@ docker compose exec app bash
 ```
 root@81d2cea8efe2:/var/www/html#
 ```
-* 以下のコマンドを実行してファイルの権限設定を変更
-```
-chmod -R 777 /var/www/html
-```
 
 ### Composerのバージョン確認
 
@@ -65,7 +61,11 @@ Composer version 2.0.13 2021-04-27 13:11:08
 ```
 composer create-project --prefer-dist "laravel/laravel=8.*" .
 ```
-* localhost:80にアクセスする
+* 以下のコマンドを実行してファイルの権限設定を変更
+```
+chmod -R 777 /var/www/html
+```
+* localhost:8080にアクセスする
     * ウェルカムページが表示されればOK
 
 ### Vue.jsのインストール
