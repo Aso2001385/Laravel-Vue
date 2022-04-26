@@ -15,6 +15,10 @@ git clone コピーしたURL
  ```
  cd ~/`作業ディレクトリ名
  ```
+* 以下のコマンドを実行してsrcフォルダを作成する
+```
+mkdir src
+```
 * 以下のコマンドを実行してビルドする
 ```
 docker compose build
