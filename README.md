@@ -35,8 +35,7 @@ docker compose up -d
  ⠿ Container docker-laravel-vue_web_1   Started
 ```
 
-### Composerのバージョン確認
-
+### コンテナに入る
 * 以下のコマンドを実行してappコンテナに移動
 ```
 docker compose exec app bash
@@ -45,6 +44,13 @@ docker compose exec app bash
 ```
 root@81d2cea8efe2:/var/www/html#
 ```
+* 以下のコマンドを実行してファイルの権限設定を変更
+```
+chmod -R 777 storage
+```
+
+### Composerのバージョン確認
+
 * 以下のコマンドを実行してバージョンを確認
 ```
 composer -V
