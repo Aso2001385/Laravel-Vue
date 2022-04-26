@@ -16,7 +16,6 @@ RUN apt-get update && \
     zip \
     unzip \
     vim \
-    && docker-php-ext-install pdo_mysql bcmath \
-    chmod 777 /var/www/html
+    && docker-php-ext-install pdo_mysql bcmath
 
 WORKDIR /var/www/html
